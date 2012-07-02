@@ -1,0 +1,3 @@
+[submodule "sort-python-imports"]
+	path = sort-python-imports
+	url = https://github.com/vim-scripts/sort-python-imports
