@@ -41,6 +41,7 @@ nnoremap ,V :source /etc/vim/vimrc<Enter>
 " ^ reload vim config on ,V
 nnoremap <C-e> <C-^>
 " jump to previously active window
+nnoremap <silent> <F9> :TagbarToggle<CR>
 " }}}
 
 " {{{ vim defaults
