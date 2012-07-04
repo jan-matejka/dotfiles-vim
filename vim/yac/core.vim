@@ -29,8 +29,8 @@ set incsearch
 
 " {{{ indenting
 set smartindent
-set expandtab
-retab
+set noexpandtab
+
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
