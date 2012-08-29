@@ -48,3 +48,11 @@ nnoremap <silent> <F9> :TagbarToggle<CR>
 set showmode
 set showcmd
 " }}}
+
+
+" {{{ buffers
+:command Bd b # | bd #
+" ^ closes the current buffer but not the window if there is a buffer to go
+" back to
+" ^ for # see :h alternate-file
+" }}}
