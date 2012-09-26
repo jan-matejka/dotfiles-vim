@@ -1,9 +1,9 @@
-[submodule "sort-python-imports"]
-	path = sort-python-imports
-	url = https://github.com/vim-scripts/sort-python-imports
-[submodule "tagbar"]
-	path = tagbar
-	url = git://github.com/majutsushi/tagbar.git
 [submodule "vim/plugin_src/tabular"]
 	path = vim/plugin_src/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/plugin_src/tagbar"]
+	path = vim/plugin_src/tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/plugin_src/sort-python-imports"]
+	path = vim/plugin_src/sort-python-imports
+	url = https://github.com/vim-scripts/sort-python-imports
