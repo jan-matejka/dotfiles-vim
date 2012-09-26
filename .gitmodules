@@ -4,3 +4,6 @@
 [submodule "tagbar"]
 	path = tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/plugin_src/tabular"]
+	path = vim/plugin_src/tabular
+	url = git://github.com/godlygeek/tabular.git
