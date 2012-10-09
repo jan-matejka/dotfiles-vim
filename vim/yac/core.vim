@@ -52,8 +52,6 @@ set showcmd
 " {{{ move by displayed lines, not actual lines (used with wrap on)
 nnoremap j gj
 nnoremap k gk
-nnoremap l gl
-nnoremap h gh
 " }}}
 
 
