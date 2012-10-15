@@ -13,3 +13,6 @@
 [submodule "vim/plugin_src/pydiction"]
 	path = vim/plugin_src/pydiction
 	url = git://github.com/vim-scripts/Pydiction.git
+[submodule "vim/plugin_src/snippets"]
+	path = vim/plugin_src/snippets
+	url = git://github.com/vim-scripts/snippetsEmu.git
