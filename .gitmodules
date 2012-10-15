@@ -22,3 +22,6 @@
 [submodule "vim/plugin_src/vcscommand"]
 	path = vim/plugin_src/vcscommand
 	url = git://repo.or.cz/vcscommand
+[submodule "vim/plugin_src/pyflakes"]
+	path = vim/plugin_src/pyflakes
+	url = git://github.com/kevinw/pyflakes-vim.git
