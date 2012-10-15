@@ -7,3 +7,6 @@
 [submodule "vim/plugin_src/sort-python-imports"]
 	path = vim/plugin_src/sort-python-imports
 	url = https://github.com/vim-scripts/sort-python-imports
+[submodule "vim/plugin_src/nerdtree"]
+	path = vim/plugin_src/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
