@@ -10,3 +10,6 @@
 [submodule "vim/plugin_src/nerdtree"]
 	path = vim/plugin_src/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "vim/plugin_src/pydiction"]
+	path = vim/plugin_src/pydiction
+	url = git://github.com/vim-scripts/Pydiction.git
