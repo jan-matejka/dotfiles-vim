@@ -9,7 +9,12 @@ set backspace=2 " make backspace actually delete, help 'backspace'
 
 " {{{ status
 set laststatus=2
-set statusline=%F%m%r%h%w\ %v\ %p%%\ %L
+set statusline=%F[%M%R]\ [%B\ %v\ %l/%L\ %p%%]\ [%Y\ %{&ff}]
+" filepath [flags] [hex_no_of_char_under_cursor column_no line_no/total_lines percentage] [filetype line_endings]
+" flags:
+"	+ - displayed if file is modified since last write
+"	- - displayed if the buffer is not modifyable
+"	RO - displayed if file is opened read only
 set showmode
 
 " }}}
