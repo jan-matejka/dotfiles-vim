@@ -19,6 +19,12 @@ set showmode
 
 " }}}
 
+" {{{
+" http://justinlilly.com/vim/vim_and_python.html
+set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+" ^ this works only as im writing, not when the buffer is rendered
+" }}}
+
 " {{{ long lines
 set wrap
 set linebreak
