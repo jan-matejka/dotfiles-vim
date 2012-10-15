@@ -19,3 +19,6 @@
 [submodule "vim/plugin_src/nerdcommenter"]
 	path = vim/plugin_src/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/plugin_src/vcscommand"]
+	path = vim/plugin_src/vcscommand
+	url = git://repo.or.cz/vcscommand
