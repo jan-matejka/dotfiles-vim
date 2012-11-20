@@ -10,7 +10,7 @@ if  !exists("*InitBackupDir")
         let separator = "."
         endif
 
-        let parent = $HOME .'/' . separator . 'vim/'
+        let parent = $HOME .'/' . separator . 'local/share/vim/'
         let backup = parent . 'backup/'
         let tmp    = parent . 'tmp/'
 
