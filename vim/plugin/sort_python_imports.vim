@@ -1,1 +1,1 @@
-../../sort-python-imports/plugin/sort_python_imports.vim
+../plugin_src/sort-python-imports/plugin/sort_python_imports.vim
