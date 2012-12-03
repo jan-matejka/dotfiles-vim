@@ -1,1 +1,1 @@
-../../tagbar/plugin/tagbar.vim
+../plugin_src/tagbar/plugin/tagbar.vim
