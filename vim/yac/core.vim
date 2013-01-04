@@ -71,4 +71,7 @@ nnoremap k gk
 " ^ closes the current buffer but not the window if there is a buffer to go
 " back to
 " ^ for # see :h alternate-file
+set wildchar=<Tab> wildmenu wildmode=full
+" ^ Tab completion on commands, buffers, etc whilst displaying all the
+" choices in menu
 " }}}
