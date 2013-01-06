@@ -75,3 +75,8 @@ set wildchar=<Tab> wildmenu wildmode=full
 " ^ Tab completion on commands, buffers, etc whilst displaying all the
 " choices in menu
 " }}}
+
+
+au BufRead *.md set syntax=markdown
+" ^ dont know what syntax is vim using by default, but it's not markdown
+au BufRead *.cf set syntax=cf3
