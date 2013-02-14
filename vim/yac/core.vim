@@ -80,3 +80,6 @@ set wildchar=<Tab> wildmenu wildmode=full
 au BufRead *.md set syntax=markdown
 " ^ dont know what syntax is vim using by default, but it's not markdown
 au BufRead *.cf set syntax=cf3
+
+
+let b:rmtrailing=1

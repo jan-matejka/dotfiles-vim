@@ -21,5 +21,3 @@ setlocal foldmethod=indent
 set smartindent
 set textwidth=79 " PEP-8 Friendly
 " }}}
-
-let b:rmtrailing=1
