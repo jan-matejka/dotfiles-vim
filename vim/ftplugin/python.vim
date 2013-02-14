@@ -22,5 +22,4 @@ set smartindent
 set textwidth=79 " PEP-8 Friendly
 " }}}
 
-
-autocmd BufWritePre * :call StripTrailingWhitespaces()
+let b:rmtrailing=1
