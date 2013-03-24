@@ -1,6 +1,3 @@
-[submodule "vim/plugin_src/tabular"]
-	path = vim/plugin_src/tabular
-	url = git://github.com/godlygeek/tabular.git
 [submodule "vim/plugin_src/tagbar"]
 	path = vim/plugin_src/tagbar
 	url = git://github.com/majutsushi/tagbar.git
@@ -31,3 +28,6 @@
 [submodule "vim/plugin_src/pathogen"]
 	path = vim/plugin_src/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
