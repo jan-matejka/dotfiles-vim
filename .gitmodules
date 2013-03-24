@@ -28,3 +28,6 @@
 [submodule "vim/plugin_src/highlight"]
 	path = vim/plugin_src/highlight
 	url = git://github.com/vim-scripts/highlight.vim.git
+[submodule "vim/plugin_src/pathogen"]
+	path = vim/plugin_src/pathogen
+	url = git://github.com/tpope/vim-pathogen.git

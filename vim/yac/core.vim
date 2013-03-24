@@ -7,6 +7,8 @@ set nocompatible
 set backspace=2 " make backspace actually delete, help 'backspace'
 " }}}
 
+execute pathogen#infect()
+
 " {{{ status
 set laststatus=2
 set statusline=%F[%M%R]\ [%B\ %v\ %l/%L\ %p%%]\ [%Y\ %{&ff}]
