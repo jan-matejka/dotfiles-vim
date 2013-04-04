@@ -7,7 +7,7 @@ set nocompatible
 set backspace=2 " make backspace actually delete, help 'backspace'
 " }}}
 
-execute pathogen#infect()
+execute pathogen#incubate()
 
 " {{{ status
 set laststatus=2
