@@ -33,6 +33,9 @@ set linebreak
 set showbreak=+
 set colorcolumn=72,80
 set textwidth=72
+
+highlight BadWhitespace ctermbg=red guibg=red
+match BadWhitespace /\s\+$/
 " }}}
 
 " {{{ search
