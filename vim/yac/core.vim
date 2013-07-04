@@ -32,7 +32,8 @@ set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 set wrap
 set linebreak
 set showbreak=+
-set colorcolumn=72,80
+set colorcolumn=73,81
+highlight ColorColumn ctermbg=LightRed
 set textwidth=72
 
 highlight BadWhitespace ctermbg=red guibg=red
