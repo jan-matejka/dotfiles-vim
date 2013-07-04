@@ -12,7 +12,8 @@ execute pathogen#incubate()
 " {{{ status
 set laststatus=2
 set statusline=%F[%M%R]\ [%B\ %v\ %l/%L\ %p%%]\ [%Y\ %{&ff}]
-" filepath [flags] [hex_no_of_char_under_cursor column_no line_no/total_lines percentage] [filetype line_endings]
+" filepath [flags] [hex_no_of_char_under_cursor column_no
+"   line_no/total_lines percentage] [filetype line_endings]
 " flags:
 "	+ - displayed if file is modified since last write
 "	- - displayed if the buffer is not modifyable
@@ -75,7 +76,8 @@ nnoremap k gk
 
 " {{{ buffers
 :command Bd b # | bd #
-" ^ closes the current buffer but not the window if there is a buffer to go
+" ^ closes the current buffer but not the window if there is a buffer to
+"   go
 " back to
 " ^ for # see :h alternate-file
 set wildchar=<Tab> wildmenu wildmode=full
