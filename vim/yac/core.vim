@@ -31,7 +31,8 @@ set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 set wrap
 set linebreak
 set showbreak=+
-set colorcolumn=80
+set colorcolumn=72,80
+set textwidth=72
 " }}}
 
 " {{{ search
