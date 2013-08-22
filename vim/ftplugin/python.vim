@@ -19,5 +19,4 @@ setlocal foldmethod=indent
 " {{{
 " http://justinlilly.com/vim/vim_and_python.html
 set smartindent
-set textwidth=79 " PEP-8 Friendly
 " }}}
