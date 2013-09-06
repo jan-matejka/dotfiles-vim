@@ -48,7 +48,9 @@ set incsearch
 " }}}
 
 " {{{ indenting
-set smartindent
+set nosmartindent
+" smartindent causes comments to NOT be indented, so they always start
+" on column 0 and can't be shifted with >>
 set noexpandtab
 
 set shiftwidth=4
