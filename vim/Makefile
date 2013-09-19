@@ -2,4 +2,4 @@ help:
 
 install:
 
-	ln -snf $(CURDIR) $(HOME)/.vim
+	cp -r $(CURDIR) $(HOME)/.vim
