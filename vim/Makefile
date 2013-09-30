@@ -2,4 +2,4 @@ build:
 
 install:
 
-	cp -r $(CURDIR) $(HOME)/.vim
+	cp -r $(CURDIR)/* $(HOME)/.vim
