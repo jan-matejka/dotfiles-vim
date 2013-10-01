@@ -51,7 +51,12 @@ set incsearch
 set nosmartindent
 " smartindent causes comments to NOT be indented, so they always start
 " on column 0 and can't be shifted with >>
-set noexpandtab
+set expandtab
+" I love the idea of tabs for indent and sppaces for align, but it just
+" doesn't work when you are making the text fit into N characters long
+" columns. It just doesn't.
+" This is basicly **aligning** the whole line, only to the right instead
+" of to the left and for aligning there are spaces. boom.
 
 set shiftwidth=4
 set softtabstop=4
