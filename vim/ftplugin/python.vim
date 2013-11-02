@@ -1,7 +1,7 @@
 let len =search('.\+')
 if len == 0
-	goto 1
-	s/^/#! \/usr\/bin\/env python\r# -*- coding: utf-8 -*-\r\rimport logging\rlog = logging.getLogger(__name__)\r\r/
+    goto 1
+    s/^/#! \/usr\/bin\/env python\r# -*- coding: utf-8 -*-\r\rimport logging\rlog = logging.getLogger(__name__)\r\r/
 endif
 
 

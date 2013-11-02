@@ -47,7 +47,7 @@ if version >= 508 || !exists("did_cfg_syn_inits")
         command -nargs=+ HiLink hi def link <args>
     endif
     HiLink cf3BodyTypes     Function
-    HiLink cf3Comment	    Comment
+    HiLink cf3Comment        Comment
     HiLink cf3Identifier    Identifier
     HiLink cf3Action        Underlined
     HiLink cf3Class         Statement
