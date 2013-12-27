@@ -1,4 +1,8 @@
 let len =search('.\+')
+if len == 0
+    goto 1
+    s/^/# -*- coding: utf-8 -*-\r\r/
+endif
 
 
 " {{{ indenting
