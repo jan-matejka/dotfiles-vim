@@ -5,6 +5,7 @@ set encoding=utf-8
 set number
 set nocompatible
 set backspace=2 " make backspace actually delete, help 'backspace'
+set cursorline " highlight entire line cursor is on
 " }}}
 
 execute pathogen#incubate()
