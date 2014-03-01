@@ -6,6 +6,9 @@ set number
 set nocompatible
 set backspace=2 " make backspace actually delete, help 'backspace'
 set cursorline " highlight entire line cursor is on
+colorscheme darkblue
+autocmd ColorScheme * hi Normal ctermbg=none
+" ^ override the ctermbg from the colorscheme
 " }}}
 
 execute pathogen#incubate()
@@ -102,8 +105,10 @@ au BufRead *.cf set syntax=cf3
 
 let b:rmtrailing=1
 
-hi IndentGuidesOdd  ctermbg=darkgrey
-hi IndentGuidesEven ctermbg=lightgrey
+autocmd ColorScheme * hi IndentGuidesOdd  ctermbg=darkgrey
+autocmd ColorScheme * hi IndentGuidesEven ctermbg=lightgrey
+" ^ needs to be prefixed with the autocmd in order to take effect when
+" colorscheme is also defined
 
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 1
