@@ -1,5 +1,5 @@
 let len =search('.\+')
 if len == 0
     goto 1
-    s/^/#! \/bin\/sh\r\r/
+    s/^/#! \/usr\/bin\/env sh\r\r/
 endif
