@@ -1,5 +1,8 @@
+DEST=$(HOME)/.vim
+
 build:
 
 install:
 
-	cp -r $(CURDIR)/* $(HOME)/.vim
+	install -d $(DEST)
+	cp -r $(CURDIR)/* $(DEST)
