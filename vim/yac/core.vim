@@ -11,7 +11,7 @@ autocmd ColorScheme * hi Normal ctermbg=none
 " ^ override the ctermbg from the colorscheme
 " }}}
 
-execute pathogen#incubate()
+execute pathogen#infect('bundle/{}')
 
 " {{{ status
 set laststatus=2
