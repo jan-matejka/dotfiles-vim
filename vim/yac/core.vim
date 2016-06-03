@@ -1,5 +1,6 @@
 " {{{ general
 syn on
+filetype plugin on
 set backup
 set encoding=utf-8
 set number
