@@ -1,3 +1,5 @@
+let b:did_ftplugin = 1
+
 let len =search('.\+')
 if len == 0
     goto 1
