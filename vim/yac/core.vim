@@ -6,7 +6,7 @@ set encoding=utf-8
 set number
 set nocompatible
 set backspace=2 " make backspace actually delete, help 'backspace'
-set cursorline " highlight entire line cursor is on
+"set cursorline " highlight entire line cursor is on
 colorscheme darkblue
 autocmd ColorScheme * hi Normal ctermbg=none
 " ^ override the ctermbg from the colorscheme
@@ -112,6 +112,6 @@ autocmd ColorScheme * hi IndentGuidesEven ctermbg=lightgrey
 " colorscheme is also defined
 
 let g:indent_guides_auto_colors = 0
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
