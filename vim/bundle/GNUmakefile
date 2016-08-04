@@ -1,5 +1,8 @@
 PLUGINS=nerdtree YouCompleteMe
 
+BASE_CLONE=git clone --depth 1
+RM_GIT_DIR=$(RM) -r $@/.git
+
 # Plugins that used to be modules:
 # git://github.com/tpope/vim-fugitive.git
 # git@github.com:nathanaelkane/vim-indent-guides.git
@@ -20,8 +23,8 @@ build: $(PLUGINS)
 
 nerdtree:
 
-	git clone --depth 1 https://github.com/scrooloose/nerdtree
-	$(RM) -r $@/.git
+	$(BASE_CLONE) https://github.com/scrooloose/nerdtree
+	$(RM_GIT_DIR)
 
 YouCompleteMe:
 
