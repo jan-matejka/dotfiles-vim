@@ -117,3 +117,16 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
 
 map <C-n> :NERDTreeToggle<CR>
+
+" Ycm Jump to Declaration of symbol under cursor
+nnoremap yjdc :YcmCompleter GoToDeclaration<CR>
+
+" Ycm Jump to Definition of the type the symbol under cursor has
+" works poorly in python
+nnoremap yjdf :YcmCompleter GoToDefinition<CR>
+
+" Ycm Jump to References
+nnoremap yjr :YcmCompleter GoToReferences<CR>
+
+" Ycm get Documentation
+nnoremap yd :YcmCompleter GetDoc<CR>
