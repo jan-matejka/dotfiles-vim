@@ -1,22 +1,8 @@
-PLUGINS=nerdtree YouCompleteMe
+PLUGINS=nerdtree YouCompleteMe vim-indent-guides tabular vim-pathogen \
+	tagbar highlight.vim vim-fugitive
 
 BASE_CLONE=git clone --depth 1
 RM_GIT_DIR=$(RM) -r $@/.git
-
-# Plugins that used to be modules:
-# git://github.com/tpope/vim-fugitive.git
-# git@github.com:nathanaelkane/vim-indent-guides.git
-# git://github.com/godlygeek/tabular.git
-# git://github.com/vim-scripts/highlight.vim.git
-# git://github.com/scrooloose/nerdcommenter.git
-# git://github.com/scrooloose/nerdtree.git
-# git://github.com/tpope/vim-pathogen.git
-# git://github.com/vim-scripts/Pydiction.git
-# git://github.com/kevinw/pyflakes-vim.git
-# git://github.com/vim-scripts/snippetsEmu.git
-# https://github.com/vim-scripts/sort-python-imports
-# git://github.com/majutsushi/tagbar.git
-# git://repo.or.cz/vcscommand
 
 .PHONY: build
 build: $(PLUGINS)
@@ -32,6 +18,36 @@ YouCompleteMe:
 	cd $@ && git submodule update --init --recursive
 	$(RM) -r $@/.git
 	$@/install.py
+
+vim-indent-guides:
+
+	$(BASE_CLONE) git@github.com:nathanaelkane/vim-indent-guides.git
+	$(RM_GIT_DIR)
+
+tabular:
+
+	$(BASE_CLONE) git://github.com/godlygeek/tabular.git
+	$(RM_GIT_DIR)
+
+vim-pathogen:
+
+	$(BASE_CLONE) git://github.com/tpope/vim-pathogen.git
+	$(RM_GIT_DIR)
+
+tagbar:
+
+	$(BASE_CLONE) git://github.com/majutsushi/tagbar.git
+	$(RM_GIT_DIR)
+
+highlight.vim:
+
+	$(BASE_CLONE) git://github.com/vim-scripts/highlight.vim.git
+	$(RM_GIT_DIR)
+
+vim-fugitive:
+
+	$(BASE_CLONE) git://github.com/tpope/vim-fugitive.git
+	$(RM_GIT_DIR)
 
 .PHONY: clean
 clean:
