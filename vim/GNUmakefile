@@ -8,8 +8,7 @@ build:
 .PHONY: install
 install:
 
-	install -d $(DEST)
-	cp -r $(CURDIR)/* $(DEST)
+	rsync -av --delete ./ $(DEST)
 
 .PHONY: clean
 clean:
