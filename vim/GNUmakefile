@@ -1,9 +1,11 @@
 DEST=$(HOME)/.vim
 
+.PHONY: build
 build:
 
 	$(MAKE) -C bundle
 
+.PHONY: install
 install:
 
 	install -d $(DEST)
