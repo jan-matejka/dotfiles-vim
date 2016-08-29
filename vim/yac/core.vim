@@ -14,6 +14,9 @@ autocmd ColorScheme * hi Normal ctermbg=none
 
 execute pathogen#infect()
 
+set nofoldenable
+" Don't fold by default
+
 " {{{ status
 set laststatus=2
 set statusline=%F[%M%R]\ [%B\ %v\ %l/%L\ %p%%]\ [%Y\ %{&ff}]
