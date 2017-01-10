@@ -49,6 +49,16 @@ vim-fugitive:
 	$(BASE_CLONE) git://github.com/tpope/vim-fugitive.git
 	$(RM_GIT_DIR)
 
+lh-vim-lib:
+
+	$(BASE_CLONE) git://github.com/LucHermitte/$@.git
+	$(RM_GIT_DIR)
+
+local_vimrc:
+
+	$(BASE_CLONE) git://github.com/LucHermitte/$@.git
+	$(RM_GIT_DIR)
+
 .PHONY: clean
 clean:
 
