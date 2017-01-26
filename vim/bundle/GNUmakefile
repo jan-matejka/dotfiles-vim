@@ -1,5 +1,5 @@
 PLUGINS=nerdtree YouCompleteMe vim-indent-guides tabular vim-pathogen \
-	tagbar highlight.vim vim-fugitive
+	tagbar highlight.vim vim-fugitive lh-vim-lib local_vimrc
 
 BASE_CLONE=git clone --depth 1
 RM_GIT_DIR=$(RM) -r $@/.git
