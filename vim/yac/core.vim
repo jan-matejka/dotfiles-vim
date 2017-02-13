@@ -139,6 +139,8 @@ nnoremap yjr :YcmCompleter GoToReferences<CR>
 " Ycm get Documentation
 nnoremap yd :YcmCompleter GetDoc<CR>
 
+let g:ycm_autoclose_preview_window_after_completion=1
+
 " remember cursor position in buffer when switching (:bp :bn ...)
 autocmd BufLeave * let b:winview = winsaveview()
 autocmd BufEnter * if exists('b:winview') | call winrestview(b:winview) | endif
