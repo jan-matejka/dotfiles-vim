@@ -1,12 +1,5 @@
 let b:did_ftplugin = 1
 
-let len =search('.\+')
-if len == 0
-    goto 1
-    s/^/# -*- coding: utf-8 -*-\r\r/
-endif
-
-
 " {{{ indenting
 setlocal expandtab
 "setlocal smarttab
