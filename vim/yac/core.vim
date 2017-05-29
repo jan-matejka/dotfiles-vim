@@ -61,9 +61,9 @@ set incsearch
 " }}}
 
 " {{{ indenting
-set nosmartindent
-" smartindent causes comments to NOT be indented, so they always start
-" on column 0 and can't be shifted with >>
+set autoindent
+set smartindent
+" smartident needs autoindent for python indenting to work properly
 set expandtab
 " I love the idea of tabs for indent and sppaces for align, but it just
 " doesn't work when you are making the text fit into N characters long
