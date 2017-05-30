@@ -60,10 +60,6 @@ set smartcase
 set incsearch
 " }}}
 
-" {{{ indenting
-set autoindent
-set smartindent
-" smartident needs autoindent for python indenting to work properly
 set expandtab
 " I love the idea of tabs for indent and sppaces for align, but it just
 " doesn't work when you are making the text fit into N characters long
