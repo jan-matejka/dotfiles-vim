@@ -123,14 +123,20 @@ let g:indent_guides_start_level = 1
 map <C-n> :NERDTreeToggle<CR>
 
 " Ycm Jump to Declaration of symbol under cursor
-nnoremap yjdc :YcmCompleter GoToDeclaration<CR>
+" python:
+"   if standing on class name, jumps to its import
+nnoremap yc :YcmCompleter GoToDeclaration<CR>
 
-" Ycm Jump to Definition of the type the symbol under cursor has
-" works poorly in python
-nnoremap yjdf :YcmCompleter GoToDefinition<CR>
+" Ycm Jump to Definition of symbol under cursor
+" python:
+"   if standing on class name, jumps to its definition
+"   if standing on variable, can't jump
+nnoremap yf :YcmCompleter GoToDefinition<CR>
 
-" Ycm Jump to References
-nnoremap yjr :YcmCompleter GoToReferences<CR>
+" Ycm Jump to References of symbol under cursor
+" python:
+"   if standing on class name, opens a window with its references
+nnoremap yr :YcmCompleter GoToReferences<CR>
 
 " Ycm get Documentation
 nnoremap yd :YcmCompleter GetDoc<CR>
