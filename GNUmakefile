@@ -9,6 +9,7 @@ build:
 install:
 
 	rsync -av --delete ./ $(DEST)
+	install -m644 .vimrc $(HOME)/.vimrc
 
 .PHONY: clean
 clean:
