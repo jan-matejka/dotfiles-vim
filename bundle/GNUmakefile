@@ -9,6 +9,7 @@ PLUGINS += highlight.vim
 PLUGINS += vim-fugitive
 PLUGINS += lh-vim-lib
 PLUGINS += local_vimrc
+PLUGINS += ale
 
 BASE_CLONE=git clone --depth 1
 RM_GIT_DIR=$(RM) -r $@/.git
@@ -66,6 +67,11 @@ lh-vim-lib:
 local_vimrc:
 
 	$(BASE_CLONE) git://github.com/LucHermitte/$@.git
+	$(RM_GIT_DIR)
+
+ale:
+
+	$(BASE_CLONE) https://github.com/w0rp/$@.git
 	$(RM_GIT_DIR)
 
 .PHONY: clean
