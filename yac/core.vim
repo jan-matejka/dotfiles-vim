@@ -146,3 +146,6 @@ let g:ycm_autoclose_preview_window_after_completion=1
 " remember cursor position in buffer when switching (:bp :bn ...)
 autocmd BufLeave * let b:winview = winsaveview()
 autocmd BufEnter * if exists('b:winview') | call winrestview(b:winview) | endif
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
