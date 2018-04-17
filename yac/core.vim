@@ -103,6 +103,7 @@ au BufRead *.md set syntax=markdown
 " ^ dont know what syntax is vim using by default, but it's not markdown
 au BufRead *.cf set syntax=cf3
 
+set autoindent
 
 let b:rmtrailing=1
 
