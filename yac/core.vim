@@ -41,13 +41,9 @@ set wrap
 set linebreak
 set showbreak=+
 
-" col limit 74 makes for 6 extra characters which makes for
-" - terminal editor line numbers up to 99999 + separating space
-" - 3 email replies in email based code reviews
-" while still fitting into 80 column length
-set colorcolumn=75
+set colorcolumn=101
 highlight ColorColumn ctermbg=LightRed
-set textwidth=74
+set textwidth=100
 
 highlight BadWhitespace ctermbg=red guibg=red
 match BadWhitespace /\s\+$/
