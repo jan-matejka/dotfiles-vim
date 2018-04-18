@@ -8,7 +8,7 @@ set nocompatible
 set backspace=2 " make backspace actually delete, help 'backspace'
 "set cursorline " highlight entire line cursor is on
 colorscheme yac
-autocmd ColorScheme * hi Normal ctermbg=none
+"autocmd ColorScheme * hi Normal ctermbg=none
 " ^ override the ctermbg from the colorscheme
 " }}}
 
