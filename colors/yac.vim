@@ -8,7 +8,7 @@ endif
 
 let colors_name = "yac"
 
-hi Normal       ctermfg=gray      ctermbg=black
+hi Normal       ctermfg=250       ctermbg=black
 hi ErrorMsg     ctermfg=white     ctermbg=lightblue
 hi Visual       ctermfg=lightblue ctermbg=fg        cterm=reverse
 hi VisualNOS    ctermfg=lightblue ctermbg=fg        cterm=reverse,underline
@@ -18,7 +18,7 @@ hi IncSearch    ctermfg=darkblue  ctermbg=gray
 
 hi SpecialKey   ctermfg=darkcyan
 hi Directory    ctermfg=cyan
-hi Title        ctermfg=magenta   cterm=bold
+hi Title        ctermfg=117       cterm=bold
 hi WarningMsg   ctermfg=red
 hi WildMenu     ctermfg=yellow    ctermbg=black     cterm=none term=none
 hi ModeMsg      ctermfg=lightblue
@@ -35,19 +35,20 @@ hi FoldColumn   ctermfg=darkgrey  ctermbg=black     cterm=bold term=bold
 hi LineNr       ctermfg=green     cterm=none
 
 hi DiffAdd      ctermbg=darkblue  term=none     cterm=none
-hi DiffChange   ctermbg=magenta   cterm=none
+hi DiffChange   ctermbg=117   cterm=none
 hi DiffDelete   ctermfg=blue      ctermbg=cyan
 hi DiffText     cterm=bold        ctermbg=red
 
 hi Cursor       ctermfg=black     ctermbg=yellow
 hi lCursor      ctermfg=black     ctermbg=white
 
-hi Comment      ctermfg=darkred
-hi Constant     ctermfg=magenta   cterm=none
+hi Comment      ctermfg=213
+hi Constant     ctermfg=117       cterm=none
 hi Special      ctermfg=brown     cterm=none
 hi Identifier   ctermfg=cyan      cterm=none
 hi Statement    ctermfg=yellow    cterm=none
-hi PreProc      ctermfg=magenta   cterm=none
+" PreProc matches from/import keywords in python
+hi PreProc      ctermfg=208       cterm=none
 hi type         ctermfg=green     cterm=none
 hi Underlined   cterm=underline   term=underline
 hi Ignore       ctermfg=bg
