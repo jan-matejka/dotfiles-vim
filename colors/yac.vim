@@ -10,11 +10,11 @@ let colors_name = "yac"
 
 hi Normal       ctermfg=250       ctermbg=black
 hi ErrorMsg     ctermfg=white     ctermbg=lightblue
-hi Visual       ctermfg=lightblue ctermbg=fg        cterm=reverse
-hi VisualNOS    ctermfg=lightblue ctermbg=fg        cterm=reverse,underline
-hi Todo         ctermfg=red       ctermbg=darkblue
-hi Search       ctermfg=white     ctermbg=darkblue  cterm=underline term=underline
-hi IncSearch    ctermfg=darkblue  ctermbg=gray
+hi Visual       ctermfg=none      ctermbg=130
+hi VisualNOS    ctermfg=none      ctermbg=130       cterm=underline
+hi Todo         ctermfg=lightred  ctermbg=130
+hi Search       ctermfg=white     ctermbg=124       cterm=underline term=underline
+hi IncSearch    ctermfg=yellow    ctermbg=124
 
 hi SpecialKey   ctermfg=darkcyan
 hi Directory    ctermfg=cyan
@@ -34,9 +34,9 @@ hi Folded       ctermfg=darkgrey  ctermbg=black     cterm=bold term=bold
 hi FoldColumn   ctermfg=darkgrey  ctermbg=black     cterm=bold term=bold
 hi LineNr       ctermfg=green     cterm=none
 
-hi DiffAdd      ctermbg=darkblue  term=none     cterm=none
-hi DiffChange   ctermbg=117   cterm=none
-hi DiffDelete   ctermfg=blue      ctermbg=cyan
+hi DiffAdd      ctermbg=130       term=none         cterm=none
+hi DiffChange   ctermbg=117       cterm=none
+hi DiffDelete   ctermfg=130       ctermbg=cyan
 hi DiffText     cterm=bold        ctermbg=red
 
 hi Cursor       ctermfg=black     ctermbg=yellow
