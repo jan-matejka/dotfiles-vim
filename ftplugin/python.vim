@@ -78,3 +78,7 @@ setlocal autoindent
 "
 " Might merit further investigation though (I'm not familiar with the
 " cinkeys, etc settings).
+
+setlocal shiftwidth=4
+setlocal tabstop=4
+setlocal softtabstop=4
