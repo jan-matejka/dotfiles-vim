@@ -93,9 +93,11 @@ nnoremap k gk
 "   go
 " back to
 " ^ for # see :h alternate-file
-set wildchar=<Tab> wildmenu wildmode=full
-" ^ Tab completion on commands, buffers, etc whilst displaying all the
-" choices in menu
+set wildchar=<Tab> wildmenu wildmode=list:longest
+" ^ Tab completion on commands, buffers, etc while
+" 1, all items are matching items are displayed above the command prompt (this doesn't happen with
+"    longest:full as the list needs to fit in one line)
+" 2, complete only the longest part so one can continue typing for next complete.
 " }}}
 
 
