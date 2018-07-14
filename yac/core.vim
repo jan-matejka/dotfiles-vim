@@ -98,6 +98,13 @@ set wildchar=<Tab> wildmenu wildmode=list:longest
 " 1, all items are matching items are displayed above the command prompt (this doesn't happen with
 "    longest:full as the list needs to fit in one line)
 " 2, complete only the longest part so one can continue typing for next complete.
+" 3, There is an issue though, that the completion can continue only if you can/want to type more
+"    characters to restrict the match.
+"    Sometimes it is easier to pick an item from displayed menu and sometimes the restriction needs
+"    to come from the left/start of the string which turns this into special case of the picking
+"    from menu.
+"    The trick here is to have keyboard keys capslock + hjkl bound to left,down,up,right which makes
+"    this simple as well.
 " }}}
 
 
