@@ -24,7 +24,7 @@ nerdtree:
 
 YouCompleteMe:
 
-	git clone https://github.com/Valloric/YouCompleteMe
+	git clone --depth 1 https://github.com/Valloric/YouCompleteMe
 	cd $@ && git submodule update --init --recursive
 	$(RM) -r $@/.git
 	$@/install.py
