@@ -155,3 +155,19 @@ autocmd BufEnter * if exists('b:winview') | call winrestview(b:winview) | endif
 
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" define a denite source named "grep" using ripgrep
+call denite#custom#var('grep', 'command', ['rg'])
+call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--no-heading'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', ['--regexp'])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
+
+" map C-P to run Denite grep
+nmap <C-P> :Denite grep<CR>
+nmap <C-p> :Denite grep<CR>
+
+" define mappings to go to prev/next line in the denite results buffer
+call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>', 'noremap')
+call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>', 'noremap')
