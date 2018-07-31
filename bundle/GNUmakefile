@@ -11,6 +11,7 @@ PLUGINS += lh-vim-lib
 PLUGINS += local_vimrc
 PLUGINS += ale
 PLUGINS += denite
+PLUGINS += airline
 
 BASE_CLONE=git clone --depth 1
 RM_GIT_DIR=$(RM) -r $@/.git
@@ -78,6 +79,11 @@ ale:
 denite:
 
 	$(BASE_CLONE) https://github.com/Shougo/$@.nvim.git $@
+	$(RM_GIT_DIR)
+
+airline:
+
+	$(BASE_CLONE) https://github.com/vim-$@/vim-$@.git $@
 	$(RM_GIT_DIR)
 
 .PHONY: clean
