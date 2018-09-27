@@ -159,6 +159,15 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_lint_on_text_changed = 1
 let g:ale_lint_on_enter = 1
 
+" dont change directory. Changing directory causes issue with finding the right rc file when using
+" strcuture like:
+"   /subproject/tox.ini
+"   /.flake8
+"
+" because when path is changed to /subproject/src/foo the tox.ini is found first and used even if it
+" contains no flake8 section and /.flake8 is left unused.
+let g:ale_python_flake8_change_directory=0
+
 " define a denite source named "grep" using ripgrep
 call denite#custom#var('grep', 'command', ['rg'])
 call denite#custom#var('grep', 'default_opts', ['--vimgrep', '--no-heading'])
