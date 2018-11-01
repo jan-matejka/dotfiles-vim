@@ -167,6 +167,7 @@ let g:ale_lint_on_enter = 1
 " because when path is changed to /subproject/src/foo the tox.ini is found first and used even if it
 " contains no flake8 section and /.flake8 is left unused.
 let g:ale_python_flake8_change_directory=0
+let g:ale_python_pylint_change_directory=0
 
 " define a denite source named "grep" using ripgrep
 call denite#custom#var('grep', 'command', ['rg'])
