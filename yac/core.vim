@@ -14,6 +14,9 @@ colorscheme yac
 
 execute pathogen#infect()
 
+" Turn spellchecking on
+set spell spelllang=en_us
+
 set nofoldenable
 " Don't fold by default
 
