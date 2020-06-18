@@ -13,12 +13,18 @@ PLUGINS += ale
 PLUGINS += denite
 PLUGINS += airline
 PLUGINS += python-imports.vim
+PLUGINS += vim-gutentags
 
 BASE_CLONE=git clone --depth 1
 RM_GIT_DIR=$(RM) -r $@/.git
 
 .PHONY: build
 build: $(PLUGINS)
+
+vim-gutentags:
+
+	$(BASE_CLONE) https://github.com/ludovicchabant/vim-gutentags.git
+	$(RM_GIT_DIR)
 
 python-imports.vim:
 
