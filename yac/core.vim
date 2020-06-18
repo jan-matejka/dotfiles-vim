@@ -134,6 +134,8 @@ map <C-n> :NERDTreeToggle<CR>
 " jump into a new window
 let g:ycm_goto_buffer_command = 'split'
 
+nnoremap yi :ImportName<CR>
+
 " Ycm Jump to Declaration of symbol under cursor
 " python:
 "   if standing on class name, jumps to its import
