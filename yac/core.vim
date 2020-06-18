@@ -131,6 +131,9 @@ let g:indent_guides_start_level = 1
 
 map <C-n> :NERDTreeToggle<CR>
 
+" jump into a new window
+let g:ycm_goto_buffer_command = 'split'
+
 " Ycm Jump to Declaration of symbol under cursor
 " python:
 "   if standing on class name, jumps to its import
@@ -140,7 +143,7 @@ nnoremap yc :YcmCompleter GoToDeclaration<CR>
 " python:
 "   if standing on class name, jumps to its definition
 "   if standing on variable, can't jump
-nnoremap yf :YcmCompleter GoToDefinition<CR>
+nnoremap yf :YcmCompleter GoTo<CR>
 
 " Ycm Jump to References of symbol under cursor
 " python:
