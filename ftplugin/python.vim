@@ -85,3 +85,6 @@ setlocal softtabstop=4
 
 let b:ale_linters = ['flake8', 'pylint']
 let b:ale_linters_explicit = 1
+
+" B insert breakpoint
+nnoremap <S-b> oimport pdb<esc>opdb.set_trace()<esc>
