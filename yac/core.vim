@@ -130,6 +130,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
 
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
 
 " jump into a new window
 let g:ycm_goto_buffer_command = 'split'
