@@ -18,6 +18,7 @@ PLUGINS += python-imports.vim
 PLUGINS += vim-gutentags
 
 BASE_CLONE=git clone --depth 1
+CLONE_NOFSCK=git -c "transfer.fsckObjects=false" clone --depth 1
 RM_GIT_DIR=$(RM) -r $@/.git
 
 .PHONY: build
@@ -67,7 +68,7 @@ tagbar:
 
 highlight.vim:
 
-	$(BASE_CLONE) https://github.com/vim-scripts/highlight.vim.git
+	$(CLONE_NOFSCK) https://github.com/vim-scripts/highlight.vim.git
 	$(RM_GIT_DIR)
 
 vim-fugitive:
