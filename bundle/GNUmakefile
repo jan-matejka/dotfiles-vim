@@ -41,7 +41,7 @@ nerdtree:
 YouCompleteMe:
 
 	git clone --depth 1 https://github.com/Valloric/YouCompleteMe
-	cd $@ && git submodule update --init --recursive
+	cd $@ && git -c "transfer.fsckObjects=false" submodule update --init --recursive
 	$(RM) -r $@/.git
 	$@/install.py
 
