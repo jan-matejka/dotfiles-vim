@@ -47,42 +47,42 @@ YouCompleteMe:
 
 vim-indent-guides:
 
-	$(BASE_CLONE) git@github.com:nathanaelkane/vim-indent-guides.git
+	$(BASE_CLONE) https://github.com/nathanaelkane/vim-indent-guides.git
 	$(RM_GIT_DIR)
 
 tabular:
 
-	$(BASE_CLONE) git://github.com/godlygeek/tabular.git
+	$(BASE_CLONE) https://github.com/godlygeek/tabular.git
 	$(RM_GIT_DIR)
 
 vim-pathogen:
 
-	$(BASE_CLONE) git://github.com/tpope/vim-pathogen.git
+	$(BASE_CLONE) https://github.com/tpope/vim-pathogen.git
 	$(RM_GIT_DIR)
 
 tagbar:
 
-	$(BASE_CLONE) git://github.com/majutsushi/tagbar.git
+	$(BASE_CLONE) https://github.com/majutsushi/tagbar.git
 	$(RM_GIT_DIR)
 
 highlight.vim:
 
-	$(BASE_CLONE) git://github.com/vim-scripts/highlight.vim.git
+	$(BASE_CLONE) https://github.com/vim-scripts/highlight.vim.git
 	$(RM_GIT_DIR)
 
 vim-fugitive:
 
-	$(BASE_CLONE) git://github.com/tpope/vim-fugitive.git
+	$(BASE_CLONE) https://github.com/tpope/vim-fugitive.git
 	$(RM_GIT_DIR)
 
 lh-vim-lib:
 
-	$(BASE_CLONE) git://github.com/LucHermitte/$@.git
+	$(BASE_CLONE) https://github.com/LucHermitte/$@.git
 	$(RM_GIT_DIR)
 
 local_vimrc:
 
-	$(BASE_CLONE) git://github.com/LucHermitte/$@.git
+	$(BASE_CLONE) https://github.com/LucHermitte/$@.git
 	$(RM_GIT_DIR)
 
 ale:
