@@ -1,3 +1,5 @@
+MAKEFLAGS += --silent
+
 DEST=$(HOME)/.vim
 
 .PHONY: build

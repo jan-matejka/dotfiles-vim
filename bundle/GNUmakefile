@@ -1,3 +1,5 @@
+MAKEFLAGS += --silent
+
 PLUGINS =
 PLUGINS += nerdtree
 PLUGINS += YouCompleteMe
