@@ -135,6 +135,10 @@ let NERDTreeShowHidden = 1
 " jump into a new window
 let g:ycm_goto_buffer_command = 'split'
 
+" indent with tab
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
 nnoremap yi :ImportName<CR>
 
 " Ycm Jump to Declaration of symbol under cursor
