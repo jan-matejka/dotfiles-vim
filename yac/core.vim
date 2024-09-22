@@ -172,6 +172,10 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_lint_on_text_changed = 1
 let g:ale_lint_on_enter = 1
 
+" set all linters except for 'ghc' as ghc is not aware of cabal
+" https://stackoverflow.com/questions/61976574/getting-incorrect-import-errors-using-ale-linter-for-haskell-files
+let g:ale_linters = {'haskell': ['cabal_ghc', 'ghc-mod', 'hdevtools', 'hie', 'hlint', 'stack_build', 'stack_ghc']}
+
 " dont change directory. Changing directory causes issue with finding the right rc file when using
 " strcuture like:
 "   /subproject/tox.ini
