@@ -174,7 +174,9 @@ let g:ale_lint_on_enter = 1
 
 " set all linters except for 'ghc' as ghc is not aware of cabal
 " https://stackoverflow.com/questions/61976574/getting-incorrect-import-errors-using-ale-linter-for-haskell-files
-let g:ale_linters = {'haskell': ['cabal_ghc', 'ghc-mod', 'hdevtools', 'hie', 'hlint', 'stack_build', 'stack_ghc']}
+" https://monicalent.com/blog/2017/11/19/haskell-in-vim/ suggests to leave only hlint, hdevtools,
+" and hfmt
+let g:ale_linters = {'haskell': ['hdevtools', 'hlint', 'hfmt']}
 
 " dont change directory. Changing directory causes issue with finding the right rc file when using
 " strcuture like:
