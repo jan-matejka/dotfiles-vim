@@ -172,6 +172,9 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:ale_lint_on_text_changed = 1
 let g:ale_lint_on_enter = 1
 
+" set the warning background to navy blue
+hi ALEWarning ctermbg=17
+
 " set all linters except for 'ghc' as ghc is not aware of cabal
 " https://stackoverflow.com/questions/61976574/getting-incorrect-import-errors-using-ale-linter-for-haskell-files
 " https://monicalent.com/blog/2017/11/19/haskell-in-vim/ suggests to leave only hlint, hdevtools,
