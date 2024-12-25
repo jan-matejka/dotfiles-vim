@@ -44,9 +44,15 @@ set wrap
 set linebreak
 set showbreak=+
 
-set colorcolumn=101
+" {{{ line length limits 79 columns as default line length limit.  80 seems to
+" be the most common standard.  Why 79?  79 is the amount of columns that is
+" available for text vim with 4 columns reserved for line numbers and 2 columns
+" reserved for warnings/linting status, on FHD display with 18px large dejavu
+" sans mono font.
+set colorcolumn=80
 highlight ColorColumn ctermbg=LightRed
-set textwidth=100
+set textwidth=79
+" }}}
 
 highlight BadWhitespace ctermbg=red guibg=red
 match BadWhitespace /\s\+$/
