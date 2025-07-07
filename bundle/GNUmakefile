@@ -2,18 +2,18 @@ MAKEFLAGS += --silent
 
 PLUGINS =
 PLUGINS += nerdtree
-PLUGINS += YouCompleteMe
+# PLUGINS += YouCompleteMe # debian: vim-youcompleteme
 PLUGINS += vim-indent-guides
-PLUGINS += tabular
-PLUGINS += vim-pathogen
+# PLUGINS += tabular # debian: vim-tabular
+# PLUGINS += vim-pathogen # debian: vim-pathogen
 PLUGINS += tagbar
 PLUGINS += highlight.vim
-PLUGINS += vim-fugitive
+# PLUGINS += vim-fugitive # debian: vim-fugitive
 PLUGINS += lh-vim-lib
 PLUGINS += local_vimrc
-PLUGINS += ale
+# PLUGINS += ale # debian: vim-ale
 PLUGINS += denite
-PLUGINS += airline
+# PLUGINS += airline # debian: vim-airline vim-airline-themes
 PLUGINS += python-imports.vim
 PLUGINS += vim-gutentags
 
