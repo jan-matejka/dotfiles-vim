@@ -88,3 +88,7 @@ let b:ale_linters_explicit = 1
 
 " B insert breakpoint
 nnoremap <S-b> oimport pdb<esc>opdb.set_trace()<esc>
+
+" https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#line-length
+set colorcolumn=89
+set textwidth=88
