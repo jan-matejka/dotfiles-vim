@@ -95,6 +95,8 @@ nnoremap j gj
 nnoremap k gk
 " }}}
 
+noremap J <PageDown>
+noremap K <PageUp>
 
 " {{{ buffers
 :command Bd b # | bd #
