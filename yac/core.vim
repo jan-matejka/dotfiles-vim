@@ -98,6 +98,10 @@ nnoremap k gk
 noremap J <PageDown>
 noremap K <PageUp>
 
+" show commit when pressing enter with cursor standing on commit sha in
+" gitrebase window
+autocmd FileType gitrebase nnoremap <buffer> <CR> :execute 'Gedit ' . expand('<cword>')<CR>
+
 " {{{ buffers
 :command Bd b # | bd #
 " ^ closes the current buffer but not the window if there is a buffer to
